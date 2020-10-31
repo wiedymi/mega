@@ -1187,7 +1187,7 @@ class File extends events.EventEmitter {
         _this = this;
 
     return _asyncToGenerator(function* () {
-      return promisify(_this.loadMetadata.bind(_this)).call(_this, _arguments);
+      return promisify(_this.loadMetadata.bind(_this)).call(_this, ..._arguments);
     })();
   }
 
@@ -1196,7 +1196,7 @@ class File extends events.EventEmitter {
         _this2 = this;
 
     return _asyncToGenerator(function* () {
-      return promisify(_this2.download.bind(_this2)).call(_this2, _arguments2);
+      return promisify(_this2.download.bind(_this2)).call(_this2, ..._arguments2);
     })();
   }
 
@@ -1205,7 +1205,7 @@ class File extends events.EventEmitter {
         _this3 = this;
 
     return _asyncToGenerator(function* () {
-      return promisify(_this3.loadAttributes.bind(_this3)).call(_this3, _arguments3);
+      return promisify(_this3.loadAttributes.bind(_this3)).call(_this3, ..._arguments3);
     })();
   }
 
@@ -1214,7 +1214,7 @@ class File extends events.EventEmitter {
         _this4 = this;
 
     return _asyncToGenerator(function* () {
-      return promisify(_this4.decryptAttributes.bind(_this4)).call(_this4, _arguments4);
+      return promisify(_this4.decryptAttributes.bind(_this4)).call(_this4, ..._arguments4);
     })();
   }
 
@@ -1223,7 +1223,7 @@ class File extends events.EventEmitter {
         _this5 = this;
 
     return _asyncToGenerator(function* () {
-      return promisify(_this5.link.bind(_this5)).call(_this5, _arguments5);
+      return promisify(_this5.link.bind(_this5)).call(_this5, ..._arguments5);
     })();
   }
 
@@ -1669,7 +1669,7 @@ class MutableFile extends File {
         _this = this;
 
     return _asyncToGenerator(function* () {
-      return promisify(_this.mkdir.bind(_this)).call(_this, _arguments);
+      return promisify(_this.mkdir.bind(_this)).call(_this, ..._arguments);
     })();
   }
 
@@ -1678,7 +1678,7 @@ class MutableFile extends File {
         _this2 = this;
 
     return _asyncToGenerator(function* () {
-      return promisify(_this2.upload.bind(_this2)).call(_this2, _arguments2);
+      return promisify(_this2.upload.bind(_this2)).call(_this2, ..._arguments2);
     })();
   }
 
@@ -1687,7 +1687,7 @@ class MutableFile extends File {
         _this3 = this;
 
     return _asyncToGenerator(function* () {
-      return promisify(_this3.delete.bind(_this3)).call(_this3, _arguments3);
+      return promisify(_this3.delete.bind(_this3)).call(_this3, ..._arguments3);
     })();
   }
 
@@ -1696,7 +1696,7 @@ class MutableFile extends File {
         _this4 = this;
 
     return _asyncToGenerator(function* () {
-      return promisify(_this4.moveTo.bind(_this4)).call(_this4, _arguments4);
+      return promisify(_this4.moveTo.bind(_this4)).call(_this4, ..._arguments4);
     })();
   }
 
@@ -1705,7 +1705,7 @@ class MutableFile extends File {
         _this5 = this;
 
     return _asyncToGenerator(function* () {
-      return promisify(_this5.rename.bind(_this5)).call(_this5, _arguments5);
+      return promisify(_this5.rename.bind(_this5)).call(_this5, ..._arguments5);
     })();
   }
 
@@ -1714,7 +1714,7 @@ class MutableFile extends File {
         _this6 = this;
 
     return _asyncToGenerator(function* () {
-      return promisify(_this6.setLabel.bind(_this6)).call(_this6, _arguments6);
+      return promisify(_this6.setLabel.bind(_this6)).call(_this6, ..._arguments6);
     })();
   }
 
@@ -1723,7 +1723,7 @@ class MutableFile extends File {
         _this7 = this;
 
     return _asyncToGenerator(function* () {
-      return promisify(_this7.setFavorite.bind(_this7)).call(_this7, _arguments7);
+      return promisify(_this7.setFavorite.bind(_this7)).call(_this7, ..._arguments7);
     })();
   }
 
@@ -1732,7 +1732,7 @@ class MutableFile extends File {
         _this8 = this;
 
     return _asyncToGenerator(function* () {
-      return promisify(_this8.link.bind(_this8)).call(_this8, _arguments8);
+      return promisify(_this8.link.bind(_this8)).call(_this8, ..._arguments8);
     })();
   }
 
@@ -1741,7 +1741,7 @@ class MutableFile extends File {
         _this9 = this;
 
     return _asyncToGenerator(function* () {
-      return promisify(_this9.shareFolder.bind(_this9)).call(_this9, _arguments9);
+      return promisify(_this9.shareFolder.bind(_this9)).call(_this9, ..._arguments9);
     })();
   }
 
@@ -1750,7 +1750,7 @@ class MutableFile extends File {
         _this10 = this;
 
     return _asyncToGenerator(function* () {
-      return promisify(_this10.unshareFolder.bind(_this10)).call(_this10, _arguments10);
+      return promisify(_this10.unshareFolder.bind(_this10)).call(_this10, ..._arguments10);
     })();
   }
 
@@ -1759,7 +1759,7 @@ class MutableFile extends File {
         _this11 = this;
 
     return _asyncToGenerator(function* () {
-      return promisify(_this11.importFile.bind(_this11)).call(_this11, _arguments11);
+      return promisify(_this11.importFile.bind(_this11)).call(_this11, ..._arguments11);
     })();
   }
 
@@ -2491,7 +2491,7 @@ class Storage extends events.EventEmitter {
         _this = this;
 
     return _asyncToGenerator(function* () {
-      return promisify(_this.login.bind(_this)).call(_this, _arguments);
+      return promisify(_this.login.bind(_this)).call(_this, ..._arguments);
     })();
   }
 
@@ -2500,7 +2500,7 @@ class Storage extends events.EventEmitter {
         _this2 = this;
 
     return _asyncToGenerator(function* () {
-      return promisify(_this2.reload.bind(_this2)).call(_this2, _arguments2);
+      return promisify(_this2.reload.bind(_this2)).call(_this2, ..._arguments2);
     })();
   }
 
@@ -2509,7 +2509,7 @@ class Storage extends events.EventEmitter {
         _this3 = this;
 
     return _asyncToGenerator(function* () {
-      return promisify(_this3.mkdir.bind(_this3)).call(_this3, _arguments3);
+      return promisify(_this3.mkdir.bind(_this3)).call(_this3, ..._arguments3);
     })();
   }
 
@@ -2518,7 +2518,7 @@ class Storage extends events.EventEmitter {
         _this4 = this;
 
     return _asyncToGenerator(function* () {
-      return promisify(_this4.upload.bind(_this4)).call(_this4, _arguments4);
+      return promisify(_this4.upload.bind(_this4)).call(_this4, ..._arguments4);
     })();
   }
 
@@ -2527,7 +2527,7 @@ class Storage extends events.EventEmitter {
         _this5 = this;
 
     return _asyncToGenerator(function* () {
-      return promisify(_this5.getAccountInfo.bind(_this5)).call(_this5, _arguments5);
+      return promisify(_this5.getAccountInfo.bind(_this5)).call(_this5, ..._arguments5);
     })();
   }
 
